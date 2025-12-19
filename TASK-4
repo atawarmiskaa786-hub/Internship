@@ -1,0 +1,28 @@
+import random
+print("---Welcome to the Game of RPS----")
+user_score = 0
+choices = ["Rock", "Paper", "Scissors"]
+while true:
+    print("\nChoose one: rock, paper, or scissors")
+    user_choice = input("Your Choice: ").lower()
+    if user_choice not in the choices:
+       print("Invalid Choice")
+       continue
+    computer_choice = random.choice(choices)
+    print(f"\nYou choose: {user_choice}")
+    print(f"\n Computer choose: {computer_choice}")
+    if user_choice == computer_choice:
+        print("Tie!)
+    elif(
+         (user_choice == "rock" and computer_choice == "scisoors") or
+         (user_choice == "paper" and computer_choice == "rock") or
+         (user_choice == "scissors" and computer_choice == "paper")
+         ):
+     else:
+         print("Result: You lose!")
+         computer_score += 1
+     print(f"\nScore -> You: {user_score} | computer: {computer_score}")
+     play_again = input("\nDo you want to play again? (yes\No): ").lower()
+     if play_again != "yes":
+        print("\nThnaks for Playing! GoodBye!)
+        break
